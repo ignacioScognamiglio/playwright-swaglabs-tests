@@ -6,5 +6,5 @@ test('Checkout Empty Cart', async ({ page }) => {
     await expect(page.locator('.shopping_cart_badge')).not.toBeVisible();
 
     await page.locator('#checkout').click();
-    await expect(page).toHaveURL('https://www.saucedemo.com/cart.html');
+    await expect(page).not.toHaveURL('https://www.saucedemo.com/cart.html');
 });

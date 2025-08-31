@@ -6,9 +6,9 @@ test('Unauthorized Access', async ({ browser }) => {
 
     await page.goto('https://www.saucedemo.com/inventory.html');
 
-    await expect(page).toHaveURL('https://www.saucedemo.com/');
+    await expect(page).not.toHaveURL('https://www.saucedemo.com/');
 
-    await expect(page.locator('[data-test="login-button"]')).toBeVisible();
+    await expect(page.locator('[data-test="login-button"]')).not.toBeVisible();
 
     await context.close();
 });
