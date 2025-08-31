@@ -1,6 +1,6 @@
 ## Automated Test Cases (Playwright + TypeScript)
 
-This project contains a set of automated test cases. The tests are written using the Playwright framework and TypeScript, and are designed to be run on Sauce Labs.
+This project contains a set of automated test cases. The tests are written using the Playwright framework and TypeScript, and are designed to be run on Sauce Labs. The goal is to validate core functionalities of an e-commerce site, including login, product navigation, and cart checkout. Tests are organized following POM (Page Object Model) for scalability.
 
 ## Pre-Setup: Automatic Login with `global-setup.ts`
 
